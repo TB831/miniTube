@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 import SearchBar from './components/SearchBar.js';
 
-const API_KEY = 'AIzaSyBLUqAK2TpJJGXdUAkGDucMfgFdq4YyXYU'
+import config from '../config.js';
 
 class App extends Component {
   constructor(props) {
@@ -13,9 +13,9 @@ class App extends Component {
     };
 
     YTSearch({
-      key: API_KEY,
+      key: config.API_KEY,
       term: 'surfboards'
-    }, (data) => {
+    }, (videos) => {
       this.setState({ videos })
     });
   }
