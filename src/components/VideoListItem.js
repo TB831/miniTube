@@ -1,10 +1,19 @@
 // Functional Component, displays the video thumbnail from YoutTube
 import React from 'react';
 
-const VideoListItem = (props) => {
+const VideoListItem = ({video}) => {
   return (
-    <li>Video</li>
-  )
+    <li className='list-group-item'>
+      <div className='video-list-item'>
+        <div className='media-left'>
+            <img className='media-object'/>
+        </div>
+        <div className='media-body'>
+          <div className='media-heading'></div>
+        </div>
+      </div>
+    </li>
+  );
 };
 
 export default VideoListItem;
