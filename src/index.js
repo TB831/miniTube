@@ -2,6 +2,7 @@ import React, { Component }from 'react';
 import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 import SearchBar from './components/SearchBar.js';
+import VideoList from './components/VideoList.js';
 
 import config from '../config.js';
 
@@ -23,6 +24,7 @@ class App extends Component {
     return (
       <div>
         <SearchBar />
+        <VideoList />
       </div>
     );
   }
