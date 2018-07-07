@@ -2,7 +2,7 @@
 import React from 'react';
 
 const VideoDetail = ({video}) =>{
-  if (!video) {   // If no video has been provided
+  if (!video) {   // Ajax spinner, if no video is provided/loaded
     return <div>Loading...</div>;
   }
 
