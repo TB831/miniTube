@@ -26,5 +26,6 @@ module.exports = {
       aggregateTimeout: 300,
       poll: 1000
     }
+    port: process.env.PORT || 8080
   }
 };
